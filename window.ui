@@ -89,6 +89,31 @@
      <string>С почтовым индексом</string>
     </property>
    </widget>
+   <widget class="QComboBox" name="layer">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>20</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>map</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sat</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sat,skl</string>
+     </property>
+    </item>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -99,28 +124,19 @@
      <height>21</height>
     </rect>
    </property>
-   <widget class="QMenu" name="layers">
-    <property name="title">
-     <string>Слои карты</string>
-    </property>
-    <addaction name="shema"/>
-    <addaction name="sputnik"/>
-    <addaction name="gibrid"/>
-   </widget>
-   <addaction name="layers"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="shema">
+  <action name="map">
    <property name="text">
     <string>Схема</string>
    </property>
   </action>
-  <action name="sputnik">
+  <action name="sat">
    <property name="text">
     <string>Спутник</string>
    </property>
   </action>
-  <action name="gibrid">
+  <action name="sat2">
    <property name="text">
     <string>Гибрид</string>
    </property>
