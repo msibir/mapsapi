@@ -72,7 +72,6 @@ class MyWidget(QMainWindow):
         self.getImage(False)
 
     def keyPressEvent(self, event):
-        print(event.key())
         if event.key() == Qt.Key_PageUp:
             self.spn = self.spn * 2
             self.spn = min(self.spn, 51.2)
